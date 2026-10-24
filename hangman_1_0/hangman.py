@@ -44,7 +44,7 @@ def ingreso_letra():
 #==========================================================================
 
 
-# =========================================VALIDACIONES==============================================
+# =========================================VALIDACIONES==================================
 def validaciones(letras_usadas):
     n = True
     while n:
@@ -60,30 +60,42 @@ def validaciones(letras_usadas):
         else:
             print("El caracter debe estar entre [A-Z]")
     return letra
+#=====================================================================================
+
+def monigotes(vidas):
+    segmentos = "".join(monigote).split("=" * 35)
+    numero_segmento = 6 - vidas
+    return print(segmentos[numero_segmento].strip("\r\n")) 
 
 
 
-#bloque de codigo de prueba de funcionamiento
-letras_usadas = []
-for g in range(5):
-    letra = validaciones(letras_usadas)
-    letras_usadas.append(letra)
-    print(letra)
-print(letras_usadas)
-#===========================================
+def jugabilidad():
+
+    vidas = 6
+    letras_usadas = []
+    palabra_oculta = palabra_random()
+    list_palabra_oculta = list(palabra_oculta)
+    progreso_jugador = ['_'] * len(palabra_oculta)
+    while vidas > 0:
+        monigotes(vidas)
+        print("TIENES " + str(vidas) + " VIDAS")
+        print("Palabra: " + " ".join(progreso_jugador))
+        letra = validaciones(letras_usadas) 
+        letras_usadas.append(letra)
+        for i in range(len(list_palabra_oculta)):
+            if list_palabra_oculta[i] == letra:
+                progreso_jugador[i] = letra
+                print("\n¡Acertaste una letra!")
+                
+        if letra not in list_palabra_oculta:
+            vidas -= 1
 
 
 
 
 
+jugabilidad()
 
 
-#print("Primera palabra de la lista: ", lineas[0].strip())
 
-'''
-segmentos = "".join(monigote).split("=" * 35)
 
-numero_segmento = 5  # Empieza en 0: el primer dibujo
-print(segmentos[numero_segmento].strip("\r\n"))
-
-'''
