@@ -79,7 +79,7 @@ hangman_1_0/
 
 ### 4.2. Gestión de palabras
 
-- [ ] Leer las palabras almacenadas en `palabras.txt`.
+- [X] Leer las palabras almacenadas en `palabras.txt`.
 - [ ] Seleccionar una palabra aleatoria al iniciar cada partida.
 - [ ] Representar cada letra de la palabra mediante un guion bajo (`_`).
 - [ ] Actualizar la palabra visible cuando el jugador acierte una letra.
