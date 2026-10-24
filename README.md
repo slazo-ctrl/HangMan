@@ -88,8 +88,8 @@ hangman_1_0/
 
 - [X] Permitir únicamente una letra por interacción.
 - [X] Rechazar entradas que contengan más de una letra.
-- [ ] Validar que la entrada pertenezca al rango `A-Z`.
-- [ ] Detectar letras repetidas y mostrar el mensaje correspondiente.
+- [X] Validar que la entrada pertenezca al rango `A-Z`.
+- [X] Detectar letras repetidas y mostrar el mensaje correspondiente.
 - [ ] Evitar que las entradas inválidas descuenten vidas.
 
 ### 4.4. Control de vidas y representación gráfica en consola
