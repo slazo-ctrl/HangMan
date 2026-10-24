@@ -80,7 +80,7 @@ hangman_1_0/
 ### 4.2. Gestión de palabras
 
 - [X] Leer las palabras almacenadas en `palabras.txt`.
-- [ ] Seleccionar una palabra aleatoria al iniciar cada partida.
+- [X] Seleccionar una palabra aleatoria al iniciar cada partida.
 - [ ] Representar cada letra de la palabra mediante un guion bajo (`_`).
 - [ ] Actualizar la palabra visible cuando el jugador acierte una letra.
 
@@ -117,7 +117,7 @@ hangman_1_0/
 
 El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 
-- [ ] Las palabras se seleccionan aleatoriamente desde el archivo correspondiente.
+- [X] Las palabras se seleccionan aleatoriamente desde el archivo correspondiente.
 - [ ] Las entradas se validan correctamente.
 - [ ] Las letras acertadas se revelan en todas sus posiciones.
 - [ ] Las vidas se descuentan únicamente por errores válidos.
@@ -127,4 +127,12 @@ El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 
 ---
 
-**Fin del documento.**
+## 6. Decisiones tomadas
+
+### 6.1. Libreria os
+
+Al intentar cargar los archivos con el `whit`...`open` me generaba errores ya que no encontraba
+la direccion de los archivos por esa razon opte por usar la libreria os
+
+### 6.2. Libreria random
+Con ayuda de esta libreria se escoge una palabra aleatoria de la lista que consera las palabras del archivo `palabras.txt`
