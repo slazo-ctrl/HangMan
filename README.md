@@ -106,10 +106,10 @@ hangman_1_0/
 - [X] Mostrar un mensaje de victoria cuando corresponda.
 - [X] Detectar cuándo el contador de vidas llega a cero.
 - [X] Mostrar un mensaje de derrota y revelar la palabra oculta.
-- [ ] Mostrar el menú de opciones al finalizar cada partida.
-- [ ] Implementar la opción de jugar nuevamente.
-- [ ] Implementar la opción de salir del juego.
-- [ ] Restablecer correctamente el estado de la partida al reiniciar.
+- [X] Mostrar el menú de opciones al finalizar cada partida.
+- [X] Implementar la opción de jugar nuevamente.
+- [X] Implementar la opción de salir del juego.
+- [X] Restablecer correctamente el estado de la partida al reiniciar.
 
 ---
 
@@ -123,7 +123,7 @@ El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 - [X] Las vidas se descuentan únicamente por errores válidos.
 - [X] El monigote coincide con el número de vidas restantes.
 - [X] La victoria y la derrota se detectan correctamente.
-- [ ] El menú permite reiniciar o cerrar el juego sin errores.
+- [X] El menú permite reiniciar o cerrar el juego sin errores.
 
 ---
 
