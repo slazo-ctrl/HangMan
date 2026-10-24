@@ -50,22 +50,22 @@ def validaciones(letras_usadas):
     while n:
         letra = ingreso_letra()
         if letra in letras_usadas:
-            print("la letra ya ah sido usada")
+            print("¡LA LETRA YA AH SIDO USADA!")
         elif len(letra) == 1 and 'A' <= letra <= 'Z':
             n = False
         elif len(letra) == 0:
-            print("No puedes entregar el caracter vacio")
+            print("¡NO PUEDES ENTREGAR EL CARACTER VACIO!")
         elif len(letra) > 1:
-            print("solo es permitido un caracter por intento")
+            print("!SOLO SE PERMITE UNA SOLA LETRA POR INTENTO¡")
         else:
-            print("El caracter debe estar entre [A-Z]")
+            print("EL CARACTER DEBE ESTAR ENTRE [A-Z]")
     return letra
 #=====================================================================================
 
 def monigotes(vidas):
     segmentos = "".join(monigote).split("=" * 35)
     numero_segmento = 6 - vidas
-    return print(segmentos[numero_segmento].strip("\r\n")) 
+    print(segmentos[numero_segmento].strip("\r\n")) 
 
 
 
@@ -77,6 +77,7 @@ def jugabilidad():
     list_palabra_oculta = list(palabra_oculta)
     progreso_jugador = ['_'] * len(palabra_oculta)
     while vidas > 0:
+        print("\n")
         monigotes(vidas)
         print("TIENES " + str(vidas) + " VIDAS")
         print("Palabra: " + " ".join(progreso_jugador))
@@ -85,10 +86,21 @@ def jugabilidad():
         for i in range(len(list_palabra_oculta)):
             if list_palabra_oculta[i] == letra:
                 progreso_jugador[i] = letra
-                print("\n¡Acertaste una letra!")
                 
         if letra not in list_palabra_oculta:
             vidas -= 1
+
+        if '_' not in progreso_jugador:
+            print(" ".join(progreso_jugador))
+            print("FELICIDADES, GANASTE EL JUEGO")
+            break
+
+        if vidas == 0:
+            print("\n")
+            monigotes(0)
+            print("\n")
+            print("LO SENETIMOS, HAS PERDIDO.\nLA PALABRA OCULTA ES: " + palabra_oculta)
+    
 
 
 

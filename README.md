@@ -81,8 +81,8 @@ hangman_1_0/
 
 - [X] Leer las palabras almacenadas en `palabras.txt`.
 - [X] Seleccionar una palabra aleatoria al iniciar cada partida.
-- [ ] Representar cada letra de la palabra mediante un guion bajo (`_`).
-- [ ] Actualizar la palabra visible cuando el jugador acierte una letra.
+- [X] Representar cada letra de la palabra mediante un guion bajo (`_`).
+- [X] Actualizar la palabra visible cuando el jugador acierte una letra.
 
 ### 4.3. Validación de entradas
 
@@ -102,10 +102,10 @@ hangman_1_0/
 
 ### 4.5. Condiciones de finalización
 
-- [ ] Detectar cuándo el jugador ha adivinado la palabra completa.
-- [ ] Mostrar un mensaje de victoria cuando corresponda.
+- [X] Detectar cuándo el jugador ha adivinado la palabra completa.
+- [X] Mostrar un mensaje de victoria cuando corresponda.
 - [X] Detectar cuándo el contador de vidas llega a cero.
-- [ ] Mostrar un mensaje de derrota y revelar la palabra oculta.
+- [X] Mostrar un mensaje de derrota y revelar la palabra oculta.
 - [ ] Mostrar el menú de opciones al finalizar cada partida.
 - [ ] Implementar la opción de jugar nuevamente.
 - [ ] Implementar la opción de salir del juego.
@@ -122,7 +122,7 @@ El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 - [X] Las letras acertadas se revelan en todas sus posiciones.
 - [X] Las vidas se descuentan únicamente por errores válidos.
 - [X] El monigote coincide con el número de vidas restantes.
-- [ ] La victoria y la derrota se detectan correctamente.
+- [X] La victoria y la derrota se detectan correctamente.
 - [ ] El menú permite reiniciar o cerrar el juego sin errores.
 
 ---
