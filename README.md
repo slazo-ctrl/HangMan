@@ -86,8 +86,8 @@ hangman_1_0/
 
 ### 4.3. Validación de entradas
 
-- [ ] Permitir únicamente una letra por interacción.
-- [ ] Rechazar entradas que contengan más de una letra.
+- [X] Permitir únicamente una letra por interacción.
+- [X] Rechazar entradas que contengan más de una letra.
 - [ ] Validar que la entrada pertenezca al rango `A-Z`.
 - [ ] Detectar letras repetidas y mostrar el mensaje correspondiente.
 - [ ] Evitar que las entradas inválidas descuenten vidas.

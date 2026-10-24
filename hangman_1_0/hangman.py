@@ -27,17 +27,41 @@ lineas = cargar_palabras()
 monigote = cargar_monigote()
 #===================================================================================================
 
+# ==================SE ESCOGE UNA PALABRA RANDOM=======================
 def palabra_random():
     palabra = random.choice(lineas)
 
     return palabra.strip()
+#======================================================================
+
+# ==================SE INGRESA UNA LETRA POR TECLADO=======================
+def ingreso_letra():
+    letra = input("Escribe una letra: ")
+    return letra.upper()
+#==========================================================================
 
 
-palabra_oculta = palabra_random()
+# =========================================VALIDACIONES==============================================
+def una_letre():
+    n = True
+    while n:
+        letra = ingreso_letra()
+        if len(letra) == 1:
+            n = False
+            return letra
+        elif len(letra) == 0:
+            print("No puedes entregar el caracter vacio")
+        else:
+            print("solo es permitido un caracter por intento")
+    return letra
 
 
-print(palabra_oculta)
-print(len(palabra_oculta))
+
+una_letre()
+
+
+
+
 
 
 
