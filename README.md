@@ -129,10 +129,19 @@ El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 
 ## 6. Decisiones tomadas
 
-### 6.1. Libreria os
+### 6.1. Metodologia de trabajo
+para este proyecto se uso el metodo de cascada ya que para un proyecto pequeño como este es muy funcional
+se leyó el documento y se sacaron los requisitos para generar la Task List, luego en la parte de diseño se penso 
+en como podria ser el diseño de los monigotes, la pantalla de jugabilidad y el menu, luego fue toda la parte del desarrollo 
+del codigo y finalizando se realizaron pruebas buscando errores y  por ultimo se subio todo a la rama principal para subir el proyecto
+
+### 6.2. Ramas usadas
+se utilizaron dos ramas `main` y `develop` en develop se desarrollo toda la parte del codigo y el main se reservo para cuando todo el codigo funcionara como se esperaba y tuviera la ultima version funcionado
+
+### 6.3. Libreria os
 
 Al intentar cargar los archivos con el `whit`...`open` me generaba errores ya que no encontraba
 la direccion de los archivos por esa razon opte por usar la libreria os
 
-### 6.2. Libreria random
+### 6.4. Libreria random
 Con ayuda de esta libreria se escoge una palabra aleatoria de la lista que consera las palabras del archivo `palabras.txt`
