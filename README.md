@@ -79,37 +79,37 @@ hangman_1_0/
 
 ### 4.2. Gestión de palabras
 
-- [ ] Leer las palabras almacenadas en `palabras.txt`.
-- [ ] Seleccionar una palabra aleatoria al iniciar cada partida.
-- [ ] Representar cada letra de la palabra mediante un guion bajo (`_`).
-- [ ] Actualizar la palabra visible cuando el jugador acierte una letra.
+- [X] Leer las palabras almacenadas en `palabras.txt`.
+- [X] Seleccionar una palabra aleatoria al iniciar cada partida.
+- [X] Representar cada letra de la palabra mediante un guion bajo (`_`).
+- [X] Actualizar la palabra visible cuando el jugador acierte una letra.
 
 ### 4.3. Validación de entradas
 
-- [ ] Permitir únicamente una letra por interacción.
-- [ ] Rechazar entradas que contengan más de una letra.
-- [ ] Validar que la entrada pertenezca al rango `A-Z`.
-- [ ] Detectar letras repetidas y mostrar el mensaje correspondiente.
-- [ ] Evitar que las entradas inválidas descuenten vidas.
+- [X] Permitir únicamente una letra por interacción.
+- [X] Rechazar entradas que contengan más de una letra.
+- [X] Validar que la entrada pertenezca al rango `A-Z`.
+- [X] Detectar letras repetidas y mostrar el mensaje correspondiente.
+- [X] Evitar que las entradas inválidas descuenten vidas.
 
 ### 4.4. Control de vidas y representación gráfica en consola
 
-- [ ] Establecer un total de 6 vidas por partida.
-- [ ] Descontar una vida cuando se ingrese una letra válida que no esté en la palabra.
-- [ ] Mostrar las vidas restantes después de cada intento válido.
-- [ ] Cargar los monigotes desde el archivo `monigote.txt`.
-- [ ] Mostrar el monigote correspondiente a las vidas restantes.
+- [X] Establecer un total de 6 vidas por partida.
+- [X] Descontar una vida cuando se ingrese una letra válida que no esté en la palabra.
+- [X] Mostrar las vidas restantes después de cada intento válido.
+- [X] Cargar los monigotes desde el archivo `monigote.txt`.
+- [X] Mostrar el monigote correspondiente a las vidas restantes.
 
 ### 4.5. Condiciones de finalización
 
-- [ ] Detectar cuándo el jugador ha adivinado la palabra completa.
-- [ ] Mostrar un mensaje de victoria cuando corresponda.
-- [ ] Detectar cuándo el contador de vidas llega a cero.
-- [ ] Mostrar un mensaje de derrota y revelar la palabra oculta.
-- [ ] Mostrar el menú de opciones al finalizar cada partida.
-- [ ] Implementar la opción de jugar nuevamente.
-- [ ] Implementar la opción de salir del juego.
-- [ ] Restablecer correctamente el estado de la partida al reiniciar.
+- [X] Detectar cuándo el jugador ha adivinado la palabra completa.
+- [X] Mostrar un mensaje de victoria cuando corresponda.
+- [X] Detectar cuándo el contador de vidas llega a cero.
+- [X] Mostrar un mensaje de derrota y revelar la palabra oculta.
+- [X] Mostrar el menú de opciones al finalizar cada partida.
+- [X] Implementar la opción de jugar nuevamente.
+- [X] Implementar la opción de salir del juego.
+- [X] Restablecer correctamente el estado de la partida al reiniciar.
 
 ---
 
@@ -117,12 +117,22 @@ hangman_1_0/
 
 El proyecto se considerará funcional cuando cumpla las siguientes condiciones:
 
-- [ ] Las palabras se seleccionan aleatoriamente desde el archivo correspondiente.
-- [ ] Las entradas se validan correctamente.
-- [ ] Las letras acertadas se revelan en todas sus posiciones.
-- [ ] Las vidas se descuentan únicamente por errores válidos.
-- [ ] El monigote coincide con el número de vidas restantes.
-- [ ] La victoria y la derrota se detectan correctamente.
-- [ ] El menú permite reiniciar o cerrar el juego sin errores.
+- [X] Las palabras se seleccionan aleatoriamente desde el archivo correspondiente.
+- [X] Las entradas se validan correctamente.
+- [X] Las letras acertadas se revelan en todas sus posiciones.
+- [X] Las vidas se descuentan únicamente por errores válidos.
+- [X] El monigote coincide con el número de vidas restantes.
+- [X] La victoria y la derrota se detectan correctamente.
+- [X] El menú permite reiniciar o cerrar el juego sin errores.
 
 ---
+
+## 6. Decisiones tomadas
+
+### 6.1. Libreria os
+
+Al intentar cargar los archivos con el `whit`...`open` me generaba errores ya que no encontraba
+la direccion de los archivos por esa razon opte por usar la libreria os
+
+### 6.2. Libreria random
+Con ayuda de esta libreria se escoge una palabra aleatoria de la lista que consera las palabras del archivo `palabras.txt`
