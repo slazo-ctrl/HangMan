@@ -1,4 +1,4 @@
-# HandMan
+# HangMan
 # Hangman 1.0 — Documentación del proyecto
 
 **Autor:** Santiago Lazo Villarraga  
