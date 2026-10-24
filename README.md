@@ -97,7 +97,7 @@ hangman_1_0/
 - [ ] Establecer un total de 6 vidas por partida.
 - [ ] Descontar una vida cuando se ingrese una letra válida que no esté en la palabra.
 - [ ] Mostrar las vidas restantes después de cada intento válido.
-- [ ] Cargar los monigotes desde el archivo `monigote.txt`.
+- [X] Cargar los monigotes desde el archivo `monigote.txt`.
 - [ ] Mostrar el monigote correspondiente a las vidas restantes.
 
 ### 4.5. Condiciones de finalización
